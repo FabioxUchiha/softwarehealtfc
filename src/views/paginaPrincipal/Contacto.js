@@ -17,14 +17,12 @@ export const Contacto = () => {
           <h2 className="mb-4 text-2xl font-bold text-center lg:text-3xl">
             Ponte en contacto
           </h2>
-          <p>
-            <ul>
-              <li>Calle Ejemplo, 1</li>
-              <li>Ciudad, 10100 Bogotá</li>
-              <li>fcastellanos782@gmail.com</li>
-              <li>+57 314 332 5474</li>
-            </ul>
-          </p>
+          <ul>
+            <li>Calle Ejemplo, 1</li>
+            <li>Ciudad, 10100 Bogotá</li>
+            <li>fcastellanos782@gmail.com</li>
+            <li>+57 314 332 5474</li>
+          </ul>
         </div>
         <div className="mx-auto sm:col-span-1 sm:mx-auto">
           <h2 className="mb-4 text-2xl font-bold text-center lg:text-3xl">
