@@ -1,6 +1,5 @@
 import React from "react";
 import { OlaBottom } from "../../components/OlaBottom";
-import { OlaTop } from "../../components/OlaTop";
 import logoPc from "../../img/facebook_cover_photo_2.png";
 import logoMovil from "../../img/facebook_profile_image.png";
 
@@ -8,7 +7,6 @@ export const Inicio = () => {
   return (
     <section id="inicio">
       <div className="relative animate__animated animate__pulse animate__delay-2s animate__repeat-2">
-        {/* <OlaTop /> */}
         <img src={logoPc} className="sr-only sm:not-sr-only" alt="imagen" />
         <img src={logoMovil} className="sm:hidden" alt="imagen" />
         <OlaBottom />
