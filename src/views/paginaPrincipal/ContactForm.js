@@ -26,7 +26,7 @@ export const ContactForm = () => {
             className="border rounded-lg focus:outline-none focus:ring-2"
             name="mensaje"
             id="mensaje"
-            cols="40"
+            cols="30"
             rows="4"
           ></textarea>
           <button
