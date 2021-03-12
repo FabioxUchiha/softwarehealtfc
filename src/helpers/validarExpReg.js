@@ -4,6 +4,6 @@ export const validarNombre = (value) => {
 };
 
 export const validarEmail = (value) => {
-  const patronEmail = /^[\w]+@{1}[\w]+\.+[a-z]{2,3}$/;
+  const patronEmail = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/;
   return patronEmail.test(value) ? false : true;
 };

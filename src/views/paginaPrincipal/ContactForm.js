@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Modal } from "../../components/Modal";
 import sendForm from "../../helpers/enviarFormContact";
 import { validarEmail, validarNombre } from "../../helpers/validarExpReg";
 

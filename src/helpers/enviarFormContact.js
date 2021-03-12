@@ -3,9 +3,7 @@ const sendForm = (value) => {
     method: "POST",
     body: new FormData(value),
   })
-    .then((res) => {
-      console.log("datos enviados");
-    })
+    .then((res) => {})
     .catch((res) => console.log(res));
 };
 
