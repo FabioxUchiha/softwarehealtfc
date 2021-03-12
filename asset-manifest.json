@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/softwarehealtfc/static/css/main.75cf5f87.chunk.css",
-    "main.js": "/softwarehealtfc/static/js/main.083afdb2.chunk.js",
-    "main.js.map": "/softwarehealtfc/static/js/main.083afdb2.chunk.js.map",
+    "main.css": "/softwarehealtfc/static/css/main.acf2d871.chunk.css",
+    "main.js": "/softwarehealtfc/static/js/main.7929a4ba.chunk.js",
+    "main.js.map": "/softwarehealtfc/static/js/main.7929a4ba.chunk.js.map",
     "runtime-main.js": "/softwarehealtfc/static/js/runtime-main.571463f7.js",
     "runtime-main.js.map": "/softwarehealtfc/static/js/runtime-main.571463f7.js.map",
     "static/css/2.b81a6ac0.chunk.css": "/softwarehealtfc/static/css/2.b81a6ac0.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.3c723701.chunk.js.map": "/softwarehealtfc/static/js/2.3c723701.chunk.js.map",
     "index.html": "/softwarehealtfc/index.html",
     "static/css/2.b81a6ac0.chunk.css.map": "/softwarehealtfc/static/css/2.b81a6ac0.chunk.css.map",
-    "static/css/main.75cf5f87.chunk.css.map": "/softwarehealtfc/static/css/main.75cf5f87.chunk.css.map",
+    "static/css/main.acf2d871.chunk.css.map": "/softwarehealtfc/static/css/main.acf2d871.chunk.css.map",
     "static/js/2.3c723701.chunk.js.LICENSE.txt": "/softwarehealtfc/static/js/2.3c723701.chunk.js.LICENSE.txt",
     "static/media/nosotros.f1df3db2.jpg": "/softwarehealtfc/static/media/nosotros.f1df3db2.jpg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.571463f7.js",
     "static/css/2.b81a6ac0.chunk.css",
     "static/js/2.3c723701.chunk.js",
-    "static/css/main.75cf5f87.chunk.css",
-    "static/js/main.083afdb2.chunk.js"
+    "static/css/main.acf2d871.chunk.css",
+    "static/js/main.7929a4ba.chunk.js"
   ]
 }
