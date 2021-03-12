@@ -4,7 +4,7 @@ import foto from "../../img/nosotros.jpg";
 
 export const Acercade = () => {
   return (
-    <section id="acercade">
+    <section className="select-none" id="acercade">
       <div className="container mx-auto">
         <div className="grid grid-cols-12">
           <div className="flex col-span-12 sm:col-span-5">

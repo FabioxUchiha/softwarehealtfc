@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-import enviarFormulario from "../../helpers/enviarFormContact";
+import React, { useEffect, useState } from "react";
+import sendForm from "../../helpers/enviarFormContact";
+import { validarEmail, validarNombre } from "../../helpers/validarExpReg";
 
 const initialFormValue = {
   nombre: "",
@@ -9,6 +10,13 @@ const initialFormValue = {
 
 export const ContactForm = () => {
   const [formValue, setFormValue] = useState(initialFormValue);
+  const [errorNombre, setErrorNombre] = useState(false);
+  const [errorEmail, setErrorEmail] = useState(false);
+
+  useEffect(() => {
+    formValue.nombre !== "" && setErrorNombre(validarNombre(formValue.nombre));
+    formValue.email !== "" && setErrorEmail(validarEmail(formValue.email));
+  }, [formValue]);
 
   const handleChangesInput = (e) => {
     const changedInput = {
@@ -20,7 +28,13 @@ export const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    enviarFormulario(e.target);
+    if (errorNombre === true || errorEmail === true) {
+    } else {
+      setErrorNombre(false);
+      setErrorEmail(false);
+      sendForm(e.target);
+      setFormValue(initialFormValue);
+    }
   };
 
   return (
@@ -35,7 +49,11 @@ export const ContactForm = () => {
             id="nombre"
             type="text"
             placeholder="--tu nombre--"
+            value={formValue.nombre}
           />
+          {errorNombre && (
+            <p className="text-red-500">Ingrese un nombre valido</p>
+          )}
           <label for="email">Correo electrónico:*</label>
           <input
             onChange={handleChangesInput}
@@ -44,7 +62,11 @@ export const ContactForm = () => {
             id="email"
             type="text"
             placeholder="--tucorreo@correo.com--"
+            value={formValue.email}
           />
+          {errorEmail && (
+            <p className="text-red-500">Ingrese un email valido</p>
+          )}
           <label for="mensaje">Mensaje</label>
           <textarea
             onChange={handleChangesInput}
@@ -53,6 +75,7 @@ export const ContactForm = () => {
             id="mensaje"
             cols="30"
             rows="4"
+            value={formValue.mensaje}
           ></textarea>
           <button
             className="bg-white rounded-lg hover:bg-gray-400 hover:text-gray-50"

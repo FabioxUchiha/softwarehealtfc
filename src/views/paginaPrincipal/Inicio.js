@@ -5,7 +5,7 @@ import logoMovil from "../../img/facebook_profile_image.png";
 
 export const Inicio = () => {
   return (
-    <section id="inicio">
+    <section className="select-none" id="inicio">
       <div className="relative animate__animated animate__pulse animate__delay-2s animate__repeat-2">
         <img src={logoPc} className="sr-only sm:not-sr-only" alt="imagen" />
         <img src={logoMovil} className="sm:hidden" alt="imagen" />
