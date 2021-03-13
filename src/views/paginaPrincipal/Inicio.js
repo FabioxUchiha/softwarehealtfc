@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { OlaBottom } from "../../components/OlaBottom";
 import logoPc from "../../img/facebook_cover_photo_2.png";
 import logoMovil from "../../img/facebook_profile_image.png";
@@ -10,6 +11,13 @@ export const Inicio = () => {
         <img src={logoPc} className="sr-only sm:not-sr-only" alt="imagen" />
         <img src={logoMovil} className="sm:hidden" alt="imagen" />
         <OlaBottom />
+      </div>
+      <div className="flex justify-center">
+        <Link className="" to="/dashboard">
+          <button className="p-2 text-white bg-gray-400 outline-none rounded-xl hover:bg-gray-300 hover:text-gray-500 hover:shadow-inner focus:outline-none">
+            vamos a comenzar
+          </button>
+        </Link>
       </div>
       <div className="container mx-auto mt-4 text-justify ">
         <h2 className="mb-4 text-2xl font-bold text-center lg:text-3xl">
