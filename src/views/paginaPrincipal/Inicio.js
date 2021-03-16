@@ -13,7 +13,7 @@ export const Inicio = () => {
         <OlaBottom />
       </div>
       <div className="flex justify-center">
-        <Link className="" to="/dashboard">
+        <Link className="" to="/softwarehealtfc/dashboard">
           <button className="p-2 text-white bg-gray-400 outline-none rounded-xl hover:bg-gray-300 hover:text-gray-500 hover:shadow-inner focus:outline-none">
             vamos a comenzar
           </button>

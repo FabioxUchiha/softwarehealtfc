@@ -13,7 +13,7 @@ const Routes = () => {
         <Route exact path="/">
           <App />
         </Route>
-        <Route exact path="/dashboard">
+        <Route exact path="/softwarehealtfc/dashboard">
           <Dashboard />
         </Route>
         <Route path="*">
