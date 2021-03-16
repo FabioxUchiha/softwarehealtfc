@@ -10,6 +10,9 @@ const Routes = () => {
         <Route exact path="/softwarehealtfc">
           <App />
         </Route>
+        <Route exact path="/">
+          <App />
+        </Route>
         <Route exact path="/dashboard">
           <Dashboard />
         </Route>

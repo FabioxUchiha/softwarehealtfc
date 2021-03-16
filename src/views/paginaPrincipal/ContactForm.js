@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Modal } from "../../components/Modal";
 import sendForm from "../../helpers/enviarFormContact";
 import { validarEmail, validarNombre } from "../../helpers/validarExpReg";
 
@@ -13,6 +12,7 @@ export const ContactForm = () => {
   const [formValue, setFormValue] = useState(initialFormValue);
   const [errorNombre, setErrorNombre] = useState(false);
   const [errorEmail, setErrorEmail] = useState(false);
+  const [mensajeEnviado, setMensajeEnviado] = useState(false);
 
   useEffect(() => {
     formValue.nombre !== "" && setErrorNombre(validarNombre(formValue.nombre));
@@ -35,11 +35,21 @@ export const ContactForm = () => {
       setErrorEmail(false);
       sendForm(e.target);
       setFormValue(initialFormValue);
+      setMensajeEnviado(true);
+      setTimeout(() => {
+        setMensajeEnviado(false);
+      }, 4000);
     }
   };
 
   return (
     <div>
+      {mensajeEnviado && (
+        <div className="text-center text-green-500 animate__animated animate__bounce">
+          <h2>Mensaje enviado correctamente.</h2>
+        </div>
+      )}
+
       <form onSubmit={handleSubmit} className="text-center">
         <div className="grid grid-cols-1 gap-1 p-3 bg-gray-200 rounded-lg">
           <label for="nombre">Nombre:*</label>
@@ -78,12 +88,14 @@ export const ContactForm = () => {
             rows="4"
             value={formValue.mensaje}
           ></textarea>
-          <button
-            className="bg-white rounded-lg hover:bg-gray-400 hover:text-gray-50"
-            type="submit"
-          >
-            Enviar
-          </button>
+          {formValue.nombre && formValue.email && (
+            <button
+              className="bg-white rounded-lg hover:bg-gray-400 hover:text-gray-50"
+              type="submit"
+            >
+              Enviar
+            </button>
+          )}
         </div>
       </form>
     </div>
