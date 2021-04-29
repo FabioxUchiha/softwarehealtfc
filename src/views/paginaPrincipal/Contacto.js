@@ -18,7 +18,6 @@ export const Contacto = () => {
             Ponte en contacto
           </h2>
           <ul>
-            <li>Calle Ejemplo, 1</li>
             <li>Ciudad, 10100 Bogotá</li>
             <li>fcastellanos782@gmail.com</li>
             <li>+57 314 332 5474</li>
